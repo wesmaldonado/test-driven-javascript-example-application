@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/js-common/jsunit/css/jsUnitStyle.css">
+<script language="JavaScript" type="text/javascript" src="/js-common/jsunit/app/jsUnitCore.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+
+function suite() {
+  
+  // run me via: localhost:10000/jsunit/suite.html
+  // this gets defined on window, thats just how it is
+  var newsuite = new top.jsUnitTestSuite();
+
+  newsuite.addTestPage("/jsunit/test_cat.html");
+  // Add in new suites by adding their test page name here
+  return newsuite;
+}
+</script>
+  </head>
+
+</html>
+

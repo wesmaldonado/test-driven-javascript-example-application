@@ -1,0 +1,23 @@
+<html>
+ <head>
+<title>Test Page for Cat</title>
+<script language="javascript" src="/js-common/jsunit/app/jsUnitCore.js"></script>
+<script language="javascript" src="/javascripts/cat.js"></script>
+</head>
+<body>
+  <script language="javascript">
+     // start server: ruby example-app.rb -p 10000
+     // go to: http://localhost:10000/js-common/jsunit/testRunner.html?1234
+     // run via:  localhost:10000/jsunit/test_cat.html
+     function testCanCreateNewCat() {
+        assertNotNull("The cat exists.", new Cat('fluffy'));
+     }
+     function testCatHasAName(){
+       assertEquals("Cat is named fluffy", "fluFffy", new Cat("fluffy").name);       
+     }
+     function testCatCanMeow(){
+       assertEquals("Cat meows", "meow", new Cat("fluffy").meow());
+     }
+  </script>
+</body>
+</html>
